@@ -26,4 +26,5 @@ IGNORE 1 LINES
 );
 
 
-SELECT *FROM vacas.temp_country_codes;
+SELECT count(*) FROM vacas.temp_country_codes;
+SELECT *FROM vacas.temp_country_codes;	

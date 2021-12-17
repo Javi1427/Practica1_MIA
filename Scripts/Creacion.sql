@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS vacas.LEVEL_1A(
 	transactions_start_year YEAR NOT NULL,
 	transactions_end_year YEAR NOT NULL,
 	even_split_commitments DOUBLE  NOT NULL,
-	even_split_disbursements DOUBLE,
+	even_split_disbursements DOUBLE NOT NULL,
 	FOREIGN KEY (project_id) REFERENCES vacas.PROJECT(project_id),
 	FOREIGN KEY (geomane_id) REFERENCES vacas.GEONAME(geomane_id)
 );

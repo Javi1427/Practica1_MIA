@@ -14,5 +14,9 @@ IGNORE 1 LINES
 	even_split_disbursements
 );
 
+SELECT count(*) FROM vacas.temp_level_1a;
 SELECT * FROM vacas.temp_level_1a;
 
+SELECT count(*) FROM vacas.CURRENCY;
+SELECT count(*) FROM vacas.TYPE_STATUS;
+SELECT count(*) FROM vacas.TRANSACTION;

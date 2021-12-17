@@ -135,17 +135,3 @@ INSERT IGNORE INTO vacas.LEVEL_1A (
 INSERT IGNORE INTO vacas.CURRENCY(transaction_currency)
 	SELECT DISTINCT transaction_currency FROM vacas.temp_transaction;
 
-
-INSERT  INTO vacas.TRANSACTION
-	(SELECT 		transaction_id,
-					project_id,
-					str_to_date(transaction_isodate,'%d/%m/%Y'),
-					transaction_year,
-					transaction_value_code,
-					vacas.CURRENCY.id_currency,
-					transaction_value
-		FROM
-			vacas.temp_transaction,
-			vacas.CURRENCY
-		WHERE 
-			vacas.temp_transaction.transaction_currency = vacas.CURRENCY.transaction_currency);

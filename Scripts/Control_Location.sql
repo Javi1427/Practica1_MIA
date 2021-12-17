@@ -10,4 +10,6 @@ IGNORE 1 LINES
 	location_type_name
 );
 
+
+SELECT COUNT(*) FROM vacas.temp_locations;
 SELECT *FROM vacas.temp_locations;
