@@ -14,6 +14,3 @@ IGNORE 1 LINES
 	transaction_currency,
 	transaction_value
 );
-
-SELECT COUNT(*) FROM vacas.temp_transaction;
-SELECT * FROM vacas.temp_transaction;

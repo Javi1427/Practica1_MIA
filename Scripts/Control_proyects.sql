@@ -23,10 +23,3 @@ IGNORE 1 LINES
 	total_commitments,
 	total_disbursements
 );
-
-
-SELECT COUNT(*) FROM vacas.temp_projects;
-SELECT COUNT(*) FROM vacas.PROJECTS;
-DELETE FROM vacas.temp_projects;
-SELECT * FROM vacas.temp_projects;
-SELECT * FROM vacas.PROJECT;

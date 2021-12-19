@@ -16,8 +16,3 @@ IGNORE 1 LINES
 	location_class,
 	geographic_exactness
 );
-
-#DELETE FROM vacas.temp_geonames;
-
-SELECT count(*) FROM vacas.temp_geonames;
-SELECT * FROM vacas.temp_geonames;
